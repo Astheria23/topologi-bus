@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bus Topology Simulation - Enhanced</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen">
+
+    <div class="bg-white shadow-md rounded-lg p-6 max-w-lg w-full">
+        <h1 class="text-3xl font-bold text-gray-800 text-center mb-4">Bus Topology Simulation</h1>
+
+        <div class="mb-4">
+            <label for="userId" class="block text-lg text-gray-700">Enter your User ID</label>
+            <input type="text" id="userId" class="mt-2 p-2 w-full border border-gray-300 rounded-lg" placeholder="User123">
+        </div>
+
+        <div class="mb-4">
+            <label for="message" class="block text-lg text-gray-700">Your Message</label>
+            <textarea id="message" rows="2" class="mt-2 p-2 w-full border border-gray-300 rounded-lg" placeholder="Write a message..."></textarea>
+        </div>
+
+        <div class="mb-6">
+            <label for="computerCount" class="block text-lg text-gray-700">Number of Computers</label>
+            <input type="number" id="computerCount" class="mt-2 p-2 w-full border border-gray-300 rounded-lg" min="2" value="5">
+        </div>
+
+        <button onclick="simulateBus()" class="w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition-all">Start Simulation</button>
+    </div>
+
+    <div id="output" class="mt-6 flex flex-wrap justify-center space-x-2 max-w-lg w-full"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
